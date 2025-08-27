@@ -6,11 +6,11 @@ import json
 from datetime import datetime, timezone, timedelta
 
 # --- PostgreSQL Connection ---
-PGHOST = os.environ.get("PGHOST", "shinkansen.proxy.rlwy.net")
-PGPORT = os.environ.get("PGPORT", "38459")
-PGUSER = os.environ.get("PGUSER", "postgres")
-PGPASSWORD = os.environ.get("PGPASSWORD", "ISI_PASSWORD")
-POSTGRES_DB = os.environ.get("POSTGRES_DB", "railway")
+PGHOST = os.environ.get("PGHOST", "")
+PGPORT = os.environ.get("PGPORT", "")
+PGUSER = os.environ.get("PGUSER", "")
+PGPASSWORD = os.environ.get("PGPASSWORD", "")
+POSTGRES_DB = os.environ.get("POSTGRES_DB", "")
 
 conn = psycopg2.connect(
     dbname=POSTGRES_DB,
