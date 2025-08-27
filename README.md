@@ -4,7 +4,7 @@ import os
 PGHOST = os.environ.get("PGHOST", "shinkansen.proxy.rlwy.net")
 PGPORT = os.environ.get("PGPORT", "38459")
 PGUSER = os.environ.get("PGUSER", "postgres")
-PGPASSWORD = os.environ.get("PGPASSWORD", "SLmWguuxrhSWJqsPRAYhfQUHBUsTioTL")
+PGPASSWORD = os.environ.get("PGPASSWORD", "isi password")
 POSTGRES_DB = os.environ.get("POSTGRES_DB", "railway")
 
 conn = psycopg2.connect(
