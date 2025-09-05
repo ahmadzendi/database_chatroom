@@ -20,6 +20,15 @@ conn = psycopg2.connect(
     port=PGPORT
 )
 c = conn.cursor()
+# Tabel request
+c.execute("""
+CREATE TABLE IF NOT EXISTS request (
+    id SERIAL PRIMARY KEY,
+    data JSONB,
+    updated_at TIMESTAMP DEFAULT NOW()
+);
+""")
+# Tabel chat
 c.execute('''
 CREATE TABLE IF NOT EXISTS chat (
     id BIGINT PRIMARY KEY,
